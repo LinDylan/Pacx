@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "commonjs",
+        "strict": true,
+        "noEmitOnError": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "out"
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

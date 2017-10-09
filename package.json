@@ -1,0 +1,8 @@
+{
+    "name": "pacx",
+    "version": "1.0.0",
+    "main": "out/main.js",
+    "devDependencies": {
+        "electron": "1.7.8"
+    }
+}
