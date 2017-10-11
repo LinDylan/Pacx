@@ -1,8 +1,8 @@
-import { app, BrowserWindow } from 'electron';
-import * as path from 'path';
-import * as url from 'url';
+const { app, BrowserWindow } = require('electron');
+const path = require('path');
+const url = require('url');
 
-let win: Electron.BrowserWindow | null;
+let win;
 
 app.on('ready', () => {
     win = new BrowserWindow({
@@ -12,7 +12,7 @@ app.on('ready', () => {
     win.loadURL(url.format({
         protocol: 'file:',
         slashes: true,
-        pathname: path.join(__dirname, '..', 'index.html')
+        pathname: path.join(__dirname, 'index.html')
     }));
     win.webContents.openDevTools();
     win.on('closed', () => {
