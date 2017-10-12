@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="pacx-app">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <h2>Hello [[prop1]]</h2>
+    </template>
+    
+    <script>
+        class PacxApp extends Polymer.Element {
+            static get is() { return 'pacx-app'; }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'world'
+                    }
+                };
+            }
+        }
+        customElements.define(PacxApp.is, PacxApp);
+    </script>
+</dom-module>
